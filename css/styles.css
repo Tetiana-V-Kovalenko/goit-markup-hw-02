@@ -1,119 +1,154 @@
 body {
-  font-family: "Roboto", "Helvetica Neue", "Verdana", "Tahoma", sans-serif;
-  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  line-height: 1.2;
+  font-style: normal;
+  --base-color: #212121;
+  --active-color: #2196f3;
+  --desrp-color: #757575;
+  --base-background-color: #f5f5f5;
+  --special-backsround-color: #2f303a;
+  --logo-studio-color: #000000;
+  --headline-text-color: #ffffff;
+  --white-translucent-color: rgba(255, 255, 255, 0.6);
+  --order-background-color: #188ce8;
+  color: var(--base-color);
+  background-color: var(--base-background-color);
 }
 
 .logo {
-  color: #2196f3;
+  text-decoration: none;
+  color: var(--active-color);
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
 }
-.logo span {
-  color: #000;
+.logo-studio {
+  color: var(--logo-studio-color);
 }
 .site-nav {
   list-style-type: none;
-  font-size: 14px;
-  line-height: 16px;
-}
-.site-nav:hover,
-.site-nav:focus {
-  color: #2196f3;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
 }
 .contacts {
-  font-size: 14px;
   list-style-type: none;
-  line-height: 16px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-.contacts:hover,
-.contacts:focus {
-  color: #2196f3;
+.nav-elements {
+  text-decoration: none;
+  color: var(--base-color);
+}
+.contacts .nav-elements {
+  color: var(--desrp-color);
+}
+
+.nav-elements:hover,
+.nav-elements:focus {
+  color: var(--active-color);
 }
 .headline {
-  background-color: #2f303a;
-  color: #ffffff;
+  background-color: var(--special-backsround-color);
+  color: var(--headline-text-color);
+  font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
-.headline button {
-  background-color: #2196f3;
-  color: #ffffff;
+.headline-order {
+  background-color: var(--active-color);
+  color: var(--headline-text-color);
   width: 216px;
   height: 50px;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
   cursor: pointer;
 }
-.headline button:hover,
-.headline button:focus {
-  background-color: #188ce8;
+.headline-order:hover,
+.headline-order:focus {
+  background-color: var(--order-background-color);
 }
 .our-features {
   list-style-type: none;
 }
-.our-features h3 {
-  font-size: 14px;
+.our-features-title {
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
-.our-features p {
-  color: #757575;
-  font-size: 14px;
-  line-height: 24px;
+.our-features-desr {
+  color: var(--desrp-color);
+  line-height: 1.71;
 }
 .desc-doing {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
 }
-.employees h2 {
+.employees-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
+  text-align: center;
 }
-.employees h3 {
+.employees-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.1875;
 }
-.employees p {
+.employees .job {
   font-size: 16px;
-  line-height: 19px;
-  color: #757575;
+  line-height: 1.1875;
+  color: var(--desrp-color);
 }
 .footer-contacts {
   list-style-type: none;
-  color: #ffffff;
-  background-color: #2f303a;
-  font-size: 14px;
-  line-height: 24px;
+  color: var(--headline-text-color);
+  background-color: var(--special-backsround-color);
+  line-height: 1.71;
+}
+.footer-contacts .contact {
+  text-decoration: none;
+  color: var(--white-translucent-color);
 }
 .filters {
   list-style-type: none;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.625;
 }
-.filters button {
+.filters-el {
   cursor: pointer;
 }
-.filters button:hover,
-.filters button:focus {
-  background: #2196f3;
-  color: #ffffff;
+.filters-el:hover,
+.filters-el:focus {
+  background: var(--active-color);
+  color: var(--headline-text-color);
 }
-.projects h3 {
+.projects-link {
+  text-decoration: none;
+}
+.projects-name {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--base-color);
 }
-.projects p {
+.projects-descr {
   font-size: 16px;
-  line-height: 30px;
-  color: #757575;
+  line-height: 1.875;
+  color: var(--desrp-color);
 }
-.hidden-h2 {
+.hidden-title {
   visibility: hidden;
 }
