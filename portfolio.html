@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -19,7 +23,7 @@
       >
 
       <nav>
-        <ul class="site-nav">
+        <ul class="site-nav list">
           <li><a href="./index.html" class="nav-elements">Студія</a></li>
           <li>
             <a href="./portfolio.html" class="nav-elements current"
@@ -29,7 +33,7 @@
           <li><a href="" class="nav-elements">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="contacts">
+      <ul class="contacts list">
         <li>
           <a href="tel:+380961111111" class="nav-elements">+38 096 111 11 11</a>
         </li>
@@ -45,35 +49,25 @@
       <section>
         <h1 class="hidden-title">Portfolio</h1>
 
-        <ul class="filters">
+        <ul class="filters list">
           <li>
-            <button type="button" class="filters-el">
-              <p class="filters-text">Усі</p>
-            </button>
+            <button type="button" class="el">Усі</button>
           </li>
           <li>
-            <button type="button" class="filters-el">
-              <p class="filters-text">Веб-сайти</p>
-            </button>
+            <button type="button" class="el">Веб-сайти</button>
           </li>
           <li>
-            <button type="button" class="filters-el">
-              <p class="filters-text">Додатки</p>
-            </button>
+            <button type="button" class="el">Додатки</button>
           </li>
           <li>
-            <button type="button" class="filters-el">
-              <p class="filters-text">Дизайн</p>
-            </button>
+            <button type="button" class="el">Дизайн</button>
           </li>
           <li>
-            <button type="button" class="filters-el">
-              <p class="filters-text">Маркетинг</p>
-            </button>
+            <button type="button" class="el">Маркетинг</button>
           </li>
         </ul>
 
-        <ul class="projects">
+        <ul class="projects list">
           <li>
             <a href="" class="projects-link"
               ><img
